@@ -25,7 +25,7 @@ build() {
 
   # TODO: Are the use of sudo and puppet frowned upon within AUR packages?
   sudo "$srcdir"/$pkgname-installers-master/substrate/run.sh $srcdir
-  SUBSTRATE_PATH=$srcdir/substrate_archlinux_x86_64.zip
+  SUBSTRATE_PATH=$srcdir/substrate_archlinux_${CARCH}.zip
 
   TMP_DIR=$(mktemp -d tmp.XXXXXXXXXX)
   TMP_DIR=$(cd ${TMP_DIR}; pwd)
