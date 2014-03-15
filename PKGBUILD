@@ -6,6 +6,7 @@
 # Contributor: helios <aur@wiresphere.de>
 # Contributor: George Ornbo <gornbo@gmail.com>
 # Contributor: Niklas Heer <niklas.heer@me.com>
+# Contributor: Steven Nance <snance@devtrw.com>
 
 pkgname=vagrant
 pkgver=1.5.1
