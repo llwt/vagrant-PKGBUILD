@@ -59,8 +59,8 @@ package() {
   cd "$srcdir"/$pkgname-$pkgver
 
   mkdir -p "$pkgdir"/usr/local
-  INSTALL_DIR="$pkgdir"/usr/local/$pkgname
-  mv "$srcdir"/$pkgname-$pkgver/ "$INSTALL_DIR"
+  INSTALL_DIR=/usr/local/$pkgname
+  mv "$srcdir"/$pkgname-$pkgver/ "${pkgdir}${INSTALL_DIR}"
 
   # Create the executable proxy
   mkdir "$pkgdir"/usr/bin
